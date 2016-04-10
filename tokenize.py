@@ -19,7 +19,7 @@ else:
 	print "Connection cannot be established"
 print stop_words
 
-'''
+
 f = open('product_descriptions.csv','r+')
 for line in f:
 	fields = line.split(",")
@@ -106,7 +106,7 @@ for line in f:
 		print temp_dict
 		p = Products(product_id = fields[1],product_name = temp_dict,product_description = {} , product_attributes = {})
 		p.save()	
-'''
+
 f = open('attributes.csv','r+')
 for line in f:
 	fields = line.split(",")
