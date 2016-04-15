@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 """
+Process attributes.cvs to attributes_data.json
+
 Created on Fri Apr 15 13:33:28 2016
 @author: Hongyang
 """
@@ -27,7 +29,7 @@ attr = Attributes()
 dic = {} # name: (product_id,value)
 dic = attr.getAttributesList("attributes.csv", dic)
 
-with open('data.json', 'w') as fp:
+with open('attributes_data.json', 'w') as fp:
     json.dump(dic, fp)
 print("END")
 
