@@ -31,11 +31,11 @@ class Attributes:
 print("Start")      
 attr = Attributes()
 dic = {} # name: (product_id,value)
-dic = attr.getAttributesList("attributes.csv", dic)
+dic = attr.getAttributesList("attributes_2.csv", dic)
 
 if "" in dic:
     del dic[""]
-    
+
 print "number of dic keys =", len(dic)
 with open('attributes_data.json', 'w') as fp:
     json.dump(dic, fp)
