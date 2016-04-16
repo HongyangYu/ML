@@ -31,7 +31,7 @@ class Attributes:
 print("Start")      
 attr = Attributes()
 dic = {} # name: (product_id,value)
-dic = attr.getAttributesList("attributes_2.csv", dic)
+dic = attr.getAttributesList("attributes.csv", dic)
 
 if "" in dic:
     del dic[""]
